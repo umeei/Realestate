@@ -1,0 +1,109 @@
+.filterbox-main{
+    width: 70%;
+    overflow: hidden;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 0 0 12px 0.01px #0000004a;
+    margin-bottom: 6vw;
+    padding: 3vw;
+    padding-bottom: 1.4vw;
+    border-radius: 0 0 5px 5px;
+    animation: filterboxani;
+    animation-duration: 3.4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+@keyframes filterboxani{
+    from{
+        width: 0%;
+        padding: 0;
+    }
+    to{
+        width: 70%;
+    }
+}
+.filterbox-main>form>.filterline1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2vw;
+    opacity: 0;
+    animation: filterlineani;
+    animation-duration: 3.4s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+@keyframes filterlineani{
+    from{
+        /* scale: 0.7; */
+        opacity: 0;
+    }
+    to{
+        /* scale: 1; */
+        opacity: 1;
+    }
+}
+.filterbox-main>form>span>.filterline1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+}
+.filterbox-main>form>.filterline1>input,select{
+    width: 100%;
+    margin: 0 1vw;
+    padding: 0.68vw 1vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.88vw;
+    outline: none;
+}
+.filterbox-main>form>span>.filterline1>input,select{
+    width: 100%;
+    margin: 0 1vw;
+    padding: 0.68vw 1vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.88vw;
+    outline: none;
+}
+.filterbox-main>form>.filterline1>p{
+    font-size: 0.78vw;
+    margin: 0 1vw;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+.filterbox-main>form>.filterline1>#filtersearch{
+    font-size: 1vw;
+    font-family: 'Poppins', sans-serif;
+    padding: 0.78vw 2.4vw;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: 0.7s;
+    background-color: #947054;
+    color: #fff;
+    margin: 0 1vw;
+}
+.filterbox-main>form>.filterline1>#filtersearch:hover{
+    background-color: #000;
+}
+.morefilter{
+    display: none;
+}
+.morefilter.open{
+    display: block;
+    overflow: hidden;
+    height: 0px;
+    animation: morefilterani;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+@keyframes morefilterani{
+    from{
+        height: 0px;
+    }
+    to{
+        height: 150px;
+    }
+}

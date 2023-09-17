@@ -1,0 +1,91 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 99999;
+    width: 100vw;
+    background-color: #00000066;
+    padding: 3vw 4.4vw;
+    animation: allnavani;
+    animation-duration: 1.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+@keyframes allnavani{
+    from{
+        top:-100%;
+    }
+    to{
+        top: 0%;
+    }
+}
+#allnav>div{
+    /* border: 2px solid red; */
+    width: 100%;
+}
+
+#allnav>.main-page-links>ul{
+    display: flex;
+}
+#allnav>.main-page-links>ul>#navlink>li{
+    color: #fff;
+    margin-right: 1.5vw;
+    list-style: none;
+    border: 1px solid transparent;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1vw;
+    font-weight: 500;
+    transition: 0.7s;
+    border-radius: 50px;
+    padding: 0.57vw 1vw;
+}
+#allnav>.main-page-links>ul>#navlink>li:hover{
+    border: 1px solid #fff;
+    cursor: pointer;
+    background-color: #fff;
+    color: green;
+}
+#allnav>.main-page-logo{
+    text-align: center;
+}
+#allnav>.main-page-logo>img{
+    width: 12vw;
+}
+#allnav>.main-page-btn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#allnav>.main-page-btn>ul{
+    display: flex;
+    align-items: center;
+}
+
+#allnav>.main-page-btn>span>#navlink>button{
+    padding: 0.67vw 1.4vw;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 1vw;
+    border: 1px solid #fff;
+    font-weight: 500;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 50px;
+    transition: 0.7s;
+}
+#allnav>.main-page-btn>span>#navlink>button:hover{
+    background-color: #fff;
+    color: green;
+}
+#allnav>.main-page-btn>span>#diff-padd{
+    padding: 0.77vw 1vw;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 1vw;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    font-weight: 500;
+    border-radius: 50px;
+}
