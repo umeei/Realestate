@@ -3,6 +3,7 @@ import "./Home.css"
 import { NavLink } from 'react-router-dom'
 import Footer1 from "../Footer_Parts/Footer1"
 import Footer2 from "../Footer_Parts/Footer2"
+import Cards from "../Home_Components/Cards"
 
 const Home = () => {
     return (
@@ -16,7 +17,7 @@ const Home = () => {
                             <NavLink to='/home' id='navlink' ><li>Home</li></NavLink>
                             <NavLink to='/properties' id='navlink' ><li>Properties</li></NavLink>
                             <NavLink to='/contact' id='navlink' ><li>Contact</li></NavLink>
-                            <NavLink to='/about' id='navlink' ><li>About</li></NavLink>
+                            <NavLink to='/aboutus' id='navlink' ><li>About</li></NavLink>
                         </ul>
                     </div>
                     <div className="main-page2-logo">
@@ -34,6 +35,7 @@ const Home = () => {
                     <h1>THE CONCEPT OF LUXURY</h1>
                 </div>
             </div>
+            <Cards />
             <Footer1 />
             <Footer2 />
         </>

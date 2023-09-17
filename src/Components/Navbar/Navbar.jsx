@@ -11,7 +11,7 @@ const Navbar = () => {
                         <NavLink to='/home' id='navlink' ><li>Home</li></NavLink>
                         <NavLink to='/properties' id='navlink' ><li>Properties</li></NavLink>
                         <NavLink to='/contact' id='navlink' ><li>Contact</li></NavLink>
-                        <NavLink to='/about' id='navlink' ><li>About</li></NavLink>
+                        <NavLink to='/aboutus' id='navlink' ><li>About</li></NavLink>
                     </ul>
                 </div>
                 <div className="main-page-logo">

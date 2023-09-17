@@ -60,5 +60,6 @@
 .properties-s1-filterbox{
     width: 100%;
     height: auto;
+    background-color: #000;
     /* border: 2px solid yellow; */
 }

@@ -1,0 +1,183 @@
+
+*{
+    overflow-x: hidden;
+}
+
+#page1{
+   
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow-x: hidden;
+    
+    
+    
+}
+#backimage{
+background-image: url("https://www.buclines.ch/application/files/6416/0162/3478/form-globe-v2.png");
+background-repeat: no-repeat;
+width: 100vw;
+height: 100vh;
+margin-left: 30vw;
+justify-content: center;
+/* position: absolute; */
+
+
+}
+
+
+
+.abheading{
+    padding: 230px;
+  
+}
+.abheading>p{
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+#page2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    padding: 100px;
+    
+}
+.leftsection{
+margin: auto;
+width: 54vw;
+}
+
+.rightsection{
+    margin: auto;
+    }
+
+#headp{
+    font-size: 1.7vw;
+    font-weight: 600;
+}   
+
+.i{
+max-width: 100%;
+min-height: 100%;
+}
+
+.cardcarousel{
+    border: 1px solid red;
+    height: 60vh;
+    width: 25vw;
+}
+
+#page3{
+    /* position: relative; */
+    height: 100%;
+    width: 100%;
+}
+
+.padding{
+    padding: 200px;
+}
+.back2{
+    background-image: url("https://preview.colorlib.com/theme/south/img/bg-img/cta.jpg.webp");
+   width: 100%;
+   height: 500px;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    z-index: 2;
+}
+#page4{
+    position: relative;
+    height: 1000%;
+    width: 100%;
+    padding: 30px;
+}
+.realtorhead>p{
+
+    font-size: 2vw;
+    font-weight: 600;
+    text-align: center;
+    overflow: hidden;
+}
+
+.multiplecards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 70px;
+   
+}
+
+
+
+.card{
+    position: relative;
+    width: 26vw;
+    height: 50vh;
+}
+.card .main{
+    width: 30vw;
+    height: 60vh;
+}
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: #000;
+    overflow-y: hidden;
+   
+    align-items: center; 
+}
+
+
+
+
+
+.card .face.face2{
+    background: #111;
+}
+.logo{
+    text-align: center;
+}
+
+
+.card .face.face1{
+    top:0;
+    left: 0;
+    transition-property: left, z-index, tranform;
+    transition-delay: 0s, 0s, 0s;
+    transition-duration:  .5s, 0s, .5s;
+    z-index: 2;
+    transform: translate(-10px, -10px);
+    
+
+}
+.card:hover .face.face1{
+    transition-property: tranform, z-index, left ;
+    transition-delay: 0s, 0s, 0s;
+    transition-duration:  .5s, 0s, .5s;
+    transform:translate(-170px, -10px) ;
+    z-index: 1;
+    left: -250px;
+    
+}
+
+.contact{
+    display: flex;
+}
+
+.topp{
+    margin-top: 7vh;
+}
+.centerdiv{
+    margin-left:100px;
+    
+}
+.iconcontent{
+    margin-top: -5px;
+    margin-left: 7px;
+}
+.goldencolor{
+    color: goldenrod;
+}
