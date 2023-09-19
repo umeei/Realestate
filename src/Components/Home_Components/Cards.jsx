@@ -9,44 +9,45 @@ import RentingManagement from "../Home_Section1/RentingManagement";
 const Cards = () => {
   return (
     <>
-      <div className="container">
-      <div className="maincard">
-        {data.map((v, i) => {
-          return (
-            <div className="card">
-              <div className="image">
-                <img className="imagecards" src={v.x} alt="" />
-              </div>
-              <div>
-                  <h4 className="cardheading">{v.heading}</h4>
+      <div className="card-container">
+        <h1>Explore Rentals in Chicago, IL</h1>
+        <div className="maincard">
+          {data.map((v, i) => {
+            return (
+              <div className="card">
+                <div className="image">
+                  <img src={v.x} alt="" />
                 </div>
-                <div >
-                  <p className="paracard">{v.para1}</p>
-                </div>
-                <div>
-                  <p className="paracard2">{v.para2}</p>
-                </div>
+                <div className="image-content">
+                  <div className="image-content-heading">
+                    <h4>{v.heading}</h4>
+                  </div>
+                  <div className="image-content-para1">
+                    <p>{v.para1}</p>
+                  </div>
+                  <div className="image-content-para2">
+                    <p>{v.para2}</p>
+                  </div>
 
-                <div className="info">
-                  <p>{v.info}</p>
+                  <div className="info">
+                    <p>{v.info}</p>
+                  </div>
                 </div>
-                
-            </div>
-          );
-        })}
-        
-      </div>
-      
-      </div>
-      <div className=" btn-center">
-          <span className="btn btn-center">View More</span>
+              </div>
+            );
+          })}
+          <div className="card-btn">
+            <button>View More</button>
+          </div>
+
         </div>
 
-      <Rent/>
-      <Ownership/>
-      <br />
-      <ManageProperty/>
-      <RentingManagement/>
+      </div>
+
+      <Rent />
+      <Ownership />
+      <ManageProperty />
+      <RentingManagement />
     </>
   );
 };
