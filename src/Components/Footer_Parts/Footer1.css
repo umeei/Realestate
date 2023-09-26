@@ -11,6 +11,7 @@
 .footer1-main{
     width: 100%;
     height: 78vh;
+    /* height: auto; */
     background-color: #000;
     display: flex;
     justify-content: space-between;
@@ -24,6 +25,7 @@
     width: 100%;
     overflow: hidden;
     height: 34vh;
+    overflow-y: hidden;
 }
 .footer1-p1{
     width: 100%;
@@ -49,6 +51,7 @@
     /* border: 1px solid red; */
     width: 100%;
     height: 5%;
+    overflow: hidden;
     display: flex;
     align-items: center;
 }
@@ -56,6 +59,7 @@
     font-family: 'Poppins', sans-serif;
     font-size: 0.88vw;
     font-weight: 600;
+    overflow: hidden;
     color: #fff;
 }
 .footer1-links{
@@ -63,6 +67,7 @@
     width: 100%;
     height: 95%;
     display: flex;
+    overflow: hidden;
     justify-content: space-between;
     align-items: center;
 }
@@ -70,6 +75,7 @@
     width: 100%;
     height: 100%;
     padding-top: 10px;
+    overflow: hidden;
     /* border: 3px solid yellow; */
 }
 .footer1-links-p1>ul>li{
@@ -79,20 +85,29 @@
     font-weight: 400;
     padding: 3.4px 0;
     color: #c0c0c0;
+    overflow: hidden;
+    transition: 0.5s;
 }
 .footer1-links-p1>ul>li:hover{
     text-decoration: underline;
     cursor: pointer;
+    color: #febe29;
 }
 .footer1-btn{
     /* border:1px solid red; */
     width: 100%;
     padding: 0 2vw;
+    overflow: hidden;
     margin: 2vw 0;
 }
 .footer1-btn>button{
     border: none;
     background-color: transparent;
     text-decoration: underline;
+    overflow: hidden;
     color: #fff;
+    transition: 0.77s;
+}
+.footer1-btn>button:hover{
+    color: #febe29;
 }
