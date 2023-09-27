@@ -88,6 +88,9 @@
     width: 30%;
     height: 44vw;
     /* border: 4px solid blue; */
+    overflow: hidden;
+    padding: 0 1vw;
+    padding-bottom: 5vw;
 }
 .about-main>.about-page2>.about-page2-p2>.about-page2-p2-1{
     width: 100%;
