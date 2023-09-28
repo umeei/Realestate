@@ -26,7 +26,7 @@ const Properties = () => {
             <label htmlFor="">ORDER BY:</label>
             <select name="" id="">
               <option value="">Default</option>
-              <option value="">Newest</option>
+              <option value="">Newestt</option>
               <option value="">Sales</option>
               <option value="">Ratings</option>
               <option value="">Popularity</option>
