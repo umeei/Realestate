@@ -12,7 +12,6 @@ const Navbar = () => {
                         <NavLink to='/properties' id='navlink' ><li>Properties</li></NavLink>
                         <NavLink to='/contact' id='navlink' ><li>Contact</li></NavLink>
                         <NavLink to='/aboutus' id='navlink' ><li>About</li></NavLink>
-                        {/* <NavLink to='/aboutus' id='navlink' ><li>About</li></NavLink> */}
                     </ul>
                 </div>
                 <div className="main-page-logo">
@@ -21,7 +20,6 @@ const Navbar = () => {
                 <div className="main-page-btn">
                     <span>
                         <NavLink to='signin' id='navlink' ><button>Sign in</button></NavLink>
-                        <NavLink to='signup' id='navlink' ><button>Sign up</button></NavLink>
                         <button id='diff-padd'><i class="fa-solid fa-bars-staggered"></i></button>
                     </span>
                 </div>
