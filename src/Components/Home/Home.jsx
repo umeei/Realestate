@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import "./Home.css"
 import { NavLink } from 'react-router-dom'
 import Footer1 from "../Footer_Parts/Footer1"
@@ -6,10 +6,27 @@ import Footer2 from "../Footer_Parts/Footer2"
 import Cards from "../Home_Components/Cards"
 
 const Home = () => {
+    const [menu, setmenu] = useState(false);
+    const menuoption = ()=>{
+        setmenu(!menu);
+    }
     return (
         <>
             <div className="main-page2">
                 <img src="https://www.buclines.ch/application/files/7116/0579/0683/hero1.jpg" alt="" />
+                <div className={menu ? "menu" : "menu closed"}>
+                    <div className="main-menu">
+                        <ul>
+                            <li>Projects</li>
+                            <li>Situation</li>
+                            <li>Villas</li>
+                            <li>Gallery</li>
+                            <li>Partners</li>
+                            <li>Download</li>
+                            <li>Contact</li>
+                        </ul>
+                    </div>
+                </div>
 
                 <nav>
                     <div className="main-page2-links">
@@ -27,7 +44,7 @@ const Home = () => {
                         <span>
                             <NavLink to='signin' id='navlink' ><button>Sign in</button></NavLink>
                             <NavLink to='signup' id='navlink' ><button>Sign up</button></NavLink>
-                            <button id='diff-padd'><i class="fa-solid fa-bars-staggered"></i></button>
+                            <button id='diff-padd' onClick={menuoption}><i class="fa-solid fa-bars-staggered"></i></button>
                         </span>
                     </div>
                 </nav>

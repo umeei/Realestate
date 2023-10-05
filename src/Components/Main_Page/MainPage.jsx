@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./MainPage.css"
 import { Textillate } from 'textillate-react'
 import { NavLink } from 'react-router-dom'
@@ -7,6 +7,11 @@ import Footer2 from "../Footer_Parts/Footer2"
 import Cards from "../Home_Components/Cards"
 
 const MainPage = () => {
+    
+    const [menu, setmenu] = useState(false);
+    const menuoption = ()=>{
+        setmenu(!menu);
+    }
 
     return (
         <>
@@ -27,8 +32,21 @@ const MainPage = () => {
             </div>
             <div className="main-page">
                 <img src="https://www.buclines.ch/application/files/7116/0579/0683/hero1.jpg" alt="" />
+                <div className={menu ? "menu" : "menu closed"}>
+                    <div className="main-menu">
+                        <ul>
+                            <li>Projects</li>
+                            <li>Situation</li>
+                            <li>Villas</li>
+                            <li>Gallery</li>
+                            <li>Partners</li>
+                            <li>Download</li>
+                            <li>Contact</li>
+                        </ul>
+                    </div>
+                </div>
 
-                <nav>
+                <nav className={menu ? "menu-nav" : "nav"}>
                     <div className="main-page-links">
                         <ul>
                             <NavLink to='/home' id='navlink' ><li>Home</li></NavLink>
@@ -44,7 +62,7 @@ const MainPage = () => {
                         <span>
                             <NavLink to='signin' id='navlink' ><button>Sign in</button></NavLink>
                             <NavLink to='signup' id='navlink' ><button>Sign up</button></NavLink>
-                            <button id='diff-padd'><i class="fa-solid fa-bars-staggered"></i></button>
+                            <button id='diff-padd' onClick={menuoption}><i class="fa-solid fa-bars-staggered"></i></button>
                         </span>
                     </div>
                 </nav>
