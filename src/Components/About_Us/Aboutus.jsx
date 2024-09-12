@@ -5,6 +5,10 @@ import Navbar from "../Navbar/Navbar"
 import FilterBox from "../Create/FilterBox"
 import Realtordata from './Realtordata'
 import Footer2 from "../Footer_Parts/Footer2"
+// import AboutCarousel from './AboutCarousel'
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 const Aboutus = () => {
   return (
     <>
@@ -42,7 +46,26 @@ const Aboutus = () => {
               <h1>FEATURED PROPERTIES</h1>
               <h6>Suspendisse dictum enim sit amet libero</h6>
             </div>
-            <div className="about-page2-p2-2"></div>
+            <div className="about-page2-p2-2">
+            <div className="properties-section2-cards-item">
+                  <div className="properties-section2-cards-item-image">
+                    <img src="https://preview.colorlib.com/theme/south/img/bg-img/feature1.jpg.webp" alt="" />
+                    <h4>FOR SALE</h4>
+                    <h2>$ 945,679</h2>
+                  </div>
+                  <div className="properties-section2-cards-item-content">
+                    <h2>Villa in Los Angeles</h2>
+                    <h5><img src="https://preview.colorlib.com/theme/south/img/icons/location.png.webp" alt="" />Upper Road 3411, no.34 CA</h5>
+                    <p>Integer nec bibendum lacus. Suspendisse dictum enim sit amet libero malesuada.</p>
+                    <div>
+                      <span><img src="https://preview.colorlib.com/theme/south/img/icons/new.png.webp" alt="" /></span>
+                      <span><img src="https://preview.colorlib.com/theme/south/img/icons/bathtub.png.webp" alt="" /><h5>2</h5></span>
+                      <span><img src="https://preview.colorlib.com/theme/south/img/icons/garage.png.webp" alt="" /><h5>2</h5></span>
+                      <span><img src="https://preview.colorlib.com/theme/south/img/icons/space.png.webp" alt="" /><h5>120 sq ft</h5></span>
+                    </div>
+                  </div>
+                </div>
+            </div>
           </div>
         </div>
         <div className="about-page3">
